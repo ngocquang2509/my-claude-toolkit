@@ -1,0 +1,42 @@
+{
+  "model": "opus",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  },
+  "enableWorkflows": true,
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": false,
+    "mattpocock-skills@claude-plugins-official": false
+  },
+  "extraKnownMarketplaces": {},
+  "outputStyle": "Explanatory",
+  "effortLevel": "medium",
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark",
+  "switchModelsOnFlag": false,
+  "skillOverrides": {
+    "anthropic-skills:fullstack-nextjs": "off",
+    "anthropic-skills:nextjs-react-ts": "off",
+    "anthropic-skills:morning": "off",
+    "anthropic-skills:import-memory": "off",
+    "anthropic-skills:setup-claude": "off",
+    "anthropic-skills:learn": "off",
+    "anthropic-skills:explain-usage": "off",
+    "anthropic-skills:consolidate-memory": "off"
+  },
+  "permissions": {
+    "defaultMode": "auto"
+  }
+}
